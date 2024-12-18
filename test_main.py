@@ -1,9 +1,8 @@
 import os
 import pytest
 import csv
-from typing import List, Dict
 from mock_storage import MockCSVStorage
-from main import import_from_file, export_attendance, add_student, edit_student, manage_attendance
+from main import import_from_file, export_attendance, add_student, edit_student
 
 @pytest.fixture
 def csv_file():
