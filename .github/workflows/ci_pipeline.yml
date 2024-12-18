@@ -32,7 +32,7 @@ jobs:
           pip install -r requirements.txt
           pip install pytest pytest-cov  # Ensure test dependencies are installed
       - name: "Run tests with coverage"
-        run: pytest -vv --cov=src 
+        run: pytest -vv --cov=main --cov-report=html --cov-report=xml
   
   lint:
     needs: test
@@ -59,10 +59,6 @@ jobs:
         run: | 
              python3 -m pip install --upgrade pip
              pip install -r requirements.txt
-             pip install ruff
-      - name: Run Ruff
-        run: |
-             ruff src/
       - name: Cache super-linter
         uses: actions/cache@v3
         with:
