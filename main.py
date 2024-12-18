@@ -25,7 +25,8 @@ def import_from_file(filename="students.csv"):
                         'last_name': cut_parts[1].strip(),
                         'present': cut_parts[2].strip().lower() == 'yes'  #convert to boolean, 'yes' == True
                     })
-                else: print('Something went wrong when importing the file.')
+                else: 
+                    print('Something went wrong when importing the file.')
         return students
     
     except FileNotFoundError:
