@@ -7,7 +7,7 @@ def import_from_file(filename="students.csv"):
     students = []
     try:
         with open(filename, 'r', newline='') as file: #'r' read file, newline='' to manage newline characters correctly in CSV files
-            reader = csv.DictReader(file)
+           # reader = csv.DictReader(file)
             lines = file.readlines() #read all the rows at once
 
             for line in lines[1:]: #skip the 1st row (headlines)
