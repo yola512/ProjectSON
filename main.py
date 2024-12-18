@@ -4,6 +4,7 @@ from mock_storage import MockCSVStorage
 
 #IMPORT
 # TODO: Test importing from file
+# Issue URL: https://github.com/yola512/ProjectSON/issues/2
 def import_from_file(filename="students.csv"):
     students = []
     try:
@@ -74,6 +75,7 @@ def add_student(first_name, last_name, storage):
 # function that edits student list
 def edit_student(old_first_name, old_last_name, new_first_name, new_last_name, storage):
     # TODO: test edit_student
+    # Issue URL: https://github.com/yola512/ProjectSON/issues/1
     updated = False
 
     if isinstance(storage, str): #if storage is a path to file
