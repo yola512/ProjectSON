@@ -3,6 +3,7 @@ import csv
 from mock_storage import MockCSVStorage
 
 #IMPORT
+# TODO: Test importing from file
 def import_from_file(filename="students.csv"):
     students = []
     try:
@@ -72,6 +73,7 @@ def add_student(first_name, last_name, storage):
 
 # function that edits student list
 def edit_student(old_first_name, old_last_name, new_first_name, new_last_name, storage):
+    # TODO: test edit_student
     updated = False
 
     if isinstance(storage, str): #if storage is a path to file
