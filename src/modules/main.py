@@ -1,6 +1,6 @@
 import os
 import csv
-from mock_storage import MockCSVStorage
+from src.common.storage.mock_storage import MockCSVStorage
 
 #IMPORT
 # TODO: Test importing from file
