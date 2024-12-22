@@ -210,9 +210,10 @@ def edit_attendance(attendance_dictionary, student_id):
   return attendance_dictionary
   
 #MENU
-if __name__ == "__main__":
+def main():
   attendance = {}
   students = []
+    
   while True:
    print("MENU:")
    print("1. Manage attendance")
@@ -239,3 +240,6 @@ if __name__ == "__main__":
       break
    else:
       print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
